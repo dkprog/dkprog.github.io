@@ -1,59 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154511578-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-154511578-1');
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="600">
-    <meta property="og:title" content="Daniel Koch">
-    <meta property="og:description" content="Full Stack Developer, Freelancer">
-    <meta property="og:url" content="http://dkprog.com">
-    <meta property="og:image" content="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=600">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=180">
-    <link rel="icon" type="image/jpg" sizes="32x32" href="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=32">
-    <link rel="icon" type="image/jpg" sizes="16x16" href="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=16">    
-    <title>Daniel Koch – Full Stack Developer</title>
-    <link rel="stylesheet" type="text/css" href="vendor/css/tachyons.min.css">
-  </head>
-  <body class="helvetica">
-    <main class="mw7 center mb1">
-      <header>
-        <h1 class="tc f1 lh-title blue tracked-tight fw8">DK</h1>
-      </header>
-      <article>
-        <section class="ph4 pv3 bg-near-white">
-          <div class="tc mb3">
-            <img src="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=400" alt="Daniel Koch's avatar" class="br-100 w4">
-          </div>
-          <h2 class="f3 lh-copy">
-            Hi, I'm Daniel Koch, a Full Stack Developer based in Sao Paulo Area, Brazil.
-          </h2>
-          
-          <p class="lh-copy f4">I have 17 years of professional programming experience.</p>
-          
-          <p class="lh-copy f4">I specialize in web application development using JavaScript, React, and PHP.</p>
-          
-          <p class="lh-copy f4">I also have experience in system programming for IoT boards, such as <span class="nowrap">Raspberry Pi</span>, creating Computer Vision software using C, Python, Node, and Electron.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full Stack Developer">
+  <meta name="keywords"
+    content="Fullstack, Developer, React, Node, WebRTC, mediasoup, Electron, IoT, Redis, videoconferencing">
+  <meta name="author" content="Daniel Koch">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:title" content="Daniel Koch">
+  <meta property="og:description" content="Full Stack Developer">
+  <meta property="og:url" content="http://dkprog.com">
+  <meta property="og:image" content="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=600">
+  <title>Daniel Koch - Full Stack Developer</title>
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=180">
+  <link rel="icon" type="image/jpg" sizes="32x32"
+    href="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=32">
+  <link rel="icon" type="image/jpg" sizes="16x16"
+    href="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=16">
+  <style>
+    html {
+      box-sizing: border-box;
+    }
 
-          <p class="lh-copu f4">You can view/download my latest CV <a href="daniel-koch-resume.pdf">here</a>.</p>
-        </section>
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
 
-        <section class="ph4 pv3">
-          <h2 class="f3 lh-copy">Get in Touch</h2>
+    body {
+      margin: 0 auto;
+      -webkit-text-size-adjust: 100%;
+      font-weight: 400;
+      line-height: 1.15;
+      font-family: helvetica neue, helvetica, sans-serif;
+      font-size: 1.15rem;
+    }
 
-          <p class="f4 lh-copy mb0">If you want to contact me, send an email to <a href="mailto:daniel@dkprog.com">daniel@dkprog.com</a>.</p>
-          
-          <p class="f4 lh-copy mt3">You can also find me on <a href="https://www.linkedin.com/in/dkprog/">LinkedIn</a>.</p>
-        </section>
-      </article>
-    </main>
-  </body>
+    a:link {
+      color: #5040DE;
+    }
+
+    a:visited {
+      color: #A35DFC;
+    }
+
+    main {
+      margin: 6rem auto 4rem;
+      max-width: 40em;
+      padding: 0 2rem;
+    }
+
+    header {
+      background-color: #357edd;
+      text-align: center;
+      height: 10vh;
+    }
+
+    img {
+      border-radius: 100%;
+      width: 8rem;
+      top: 3vh;
+      position: absolute;
+      transform: translate(-50%, 0);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 2rem;
+    }
+
+    li {
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=200" alt="Daniel Koch's avatar">
+  </header>
+  <main>
+    <h2>Hi, I'm Daniel Koch</h2>
+
+    <h3>I'm a Full Stack Developer based in Sao Paulo Area, Brazil</h3>
+
+    <ul>
+      <li>I create web applications using <strong>JavaScript</strong> and <strong>React</strong>;</li>
+      <li>I specialize in <em>videoconferencing</em> applications using <strong>WebRTC</strong>;</li>
+      <li>I'm also a former <strong>ANSI C</strong> programmer with experience in system programming for IoT
+        and Computer Vision software.</li>
+    </ul>
+
+    <p>
+      You can <a href="daniel-koch-resume.pdf" alt="View my PDF resume">view my latest CV</a>.
+    </p>
+
+    <h3>Get in Touch</h3>
+
+    <p>
+      If you want to contact me, send an email to <a href="mailto:daniel@dkprog.com">daniel@dkprog.com</a>.
+    </p>
+
+    <p>
+      You can also find me on <a href="https://www.linkedin.com/in/dkprog/" target="_blank" rel="noopener">LinkedIn</a>.
+    </p>
+  </main>
+
+</body>
+
 </html>

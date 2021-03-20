@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  -webkit-text-size-adjust: 100%;
+  /* font-size: 1rem; */
+  font-weight: 400;
+  line-height: 1.15;
+  font-family: helvetica neue,helvetica,sans-serif;
+}
+
+a:link {
+  color: #357edd;
+}
+
+main {
+  margin: 6rem auto 4rem;
+  max-width: 40em;
+}
+
+header {
+  background-color: #357edd;
+  text-align: center;
+  height: 10vh;
+}
+
+img {
+  border-radius: 100%;
+  width: 8rem;
+  top: 3vh;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+section {
+  padding: 0 2rem;
+}
