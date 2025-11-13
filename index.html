@@ -61,7 +61,7 @@
       height: 10vh;
     }
 
-    img {
+    img.profile {
       border-radius: 100%;
       width: 8rem;
       top: 3vh;
@@ -75,23 +75,38 @@
 
     h3 {
       margin-top: 4rem;
+      text-align: center;
     }
 
     li {
       line-height: 1.5;
       margin-bottom: 1rem;
     }
+
+    figure {
+      margin: 0 auto;
+      width: fit-content;
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=200" alt="Daniel Koch's avatar">
+    <img class="profile" src="https://s.gravatar.com/avatar/f3f62ad83d1050f8a819a5f96d241931?s=200" alt="Daniel Koch's avatar">
   </header>
   <main>
     <h2>Hi, I'm Daniel Koch</h2>
 
     <h3>I'm a Software Developer from Brazil</h3>
+
+    <figure>
+      <img src="hello-world-gstreamer.gif" alt="hello-world-gstreamer" width="320" height="240" />
+
+      <figcaption>
+        <small><a href="https://github.com/dkprog/hello-world-gstreamer" target="_blank">See source</a></small>
+      </figcaption>
+    </figure>
 
     <ul>
       <li>I specialize in <strong>video programming</strong></li>
